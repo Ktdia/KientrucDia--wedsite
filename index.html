@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiến Trúc Dia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project-item {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .project-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .project-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Kiến Trúc Dia">
+        <h1>Kiến Trúc Dia</h1>
+        <p>Thiết kế Kiến Trúc và Nội Thất</p>
+    </header>
+    <nav>
+        <a href="#projects">Dự Án</a>
+        <a href="#about">Giới Thiệu</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
+    <div class="container" id="projects">
+        <h2>Dự Án và Công Trình</h2>
+        <div class="project">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Mô tả ngắn về dự án.</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Mô tả ngắn về dự án.</p>
+            </div>
+            <div class="project-item">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Mô tả ngắn về dự án.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2>Giới Thiệu</h2>
+        <p>Chào mừng bạn đến với trang web của Kiến Trúc Dia. Chúng tôi chuyên về thiết kế kiến trúc và nội thất, mang đến cho khách hàng những giải pháp tối ưu và sáng tạo nhất.</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Liên Hệ</h2>
+        <p>Email: <a href="mailto:trandieu86.td@gmail.com">trandieu86.td@gmail.com</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/tran.dieu.3" target="_blank">https://www.facebook.com/tran.dieu.3</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kiến Trúc Dia</p>
+    </footer>
+</body>
+</html>
